@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  .at-wrap {
+    width: 70vw;
+    height: 98vh;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .at-content {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 auto;
+  }
+
+  /** Sidebar **/
+  .at-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 70px;
+    width: auto;
+    display: flex;
+    align-content: stretch;
+    z-index: 1001;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    background: #f7f7f7;
+  }
+
+  .at-sidebar:hover {
+    max-width: 400px;
+    transition: max-width 0.2s;
+    overflow-y: auto;
+  }
+
+  .at-viewport {
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    right: 0;
+    bottom: 0;
+    padding-right: 20px;
+  }
+
+  .at-footer {
+    flex: 0 0 auto;
+    background: #436d9d;
+    color: #fff;
+  }
+
+  /** Overlay **/
+
+  .at-overlay {
+    /** Fill Parent */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1002;
+
+    /* Blurry dark shade */
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.5);
+
+    /** center content */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .at-overlay-content {
+    /* white box with drop-shadow */
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+  }
+
+  /** Footer **/
+  .at-controls {
+    height: 280px;
+    display: inline-flex;
+    justify-content: space-around;
+    background: #436d9d;
+    color: #fff;
+  }
+.lyrics-board{
+  width: 400px;
+  height: 150px;
+  overflow:auto;
+  border: greenyellow 1px solid;
+}
+.at-controls-right{
+  text-align: center;
+
+}
+
+  .at-controls .btn {
+    color: #fff;
+    border-radius: 0;
+    height: 30px;
+    width: 40px;
+    font-size: 16px;
+  }
+  .at-controls .btn.disabled {
+    cursor: progress;
+    opacity: 0.5;
+  }
+
+  .at-controls a.active {
+    border: #c77055 3px solid;
+    background: #c77055;
+    text-decoration: none;
+  }
+
+  .at-controls .btn i {
+    vertical-align: top;
+  }
+  .control-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .at-controls select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: #436d9d;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 16px;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+    cursor: pointer;
+  }
+
+  .at-song-title {
+    font-weight: bold;
+  }
+
+  .at-cursor-bar {
+    /* Defines the color of the bar background when a bar is played */
+    background: rgba(255, 242, 0, 0.25);
+  }
+
+  .at-selection div {
+    /* Defines the color of the selection background */
+    background: rgba(64, 64, 255, 0.1);
+  }
+
+  .at-cursor-beat {
+    /* Defines the beat cursor */
+    background: rgba(64, 64, 255, 0.75);
+    width: 3px;
+  }
+
+  .at-highlight * {
+    /* Defines the color of the music symbols when they are being played (svg) */
+    fill: #0078ff;
+    stroke: #0078ff;
+  }
+  #song-details {
+    font-family: 'Georgia';
+}
+/* Hide empty elements */
+#song-details > *:empty {
+   display: none;
+}
+#song-details h1, #song-details h2 {
+    text-align: center;
+}
+.playback select{
+  width: 60px;
+}
