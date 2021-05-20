@@ -97,45 +97,45 @@
         switch(beat.maxNote.string){
           case 4: {
             if(beat.maxNote.fret==0){
-              img.setAttribute("src","/img/G3.png");
+              img.setAttribute("src","./img/G3.png");
               break;
             }
             if(beat.maxNote.fret==2){
-              img.setAttribute("src","/img/A3.png");
+              img.setAttribute("src","./img/A3.png");
               break;
             }
           }
           case 5:{
             if(beat.maxNote.fret==1){
-              img.setAttribute("src","/img/C4.png");
+              img.setAttribute("src","./img/C4.png");
               break;
             }
            if(beat.maxNote.fret==0){
-              img.setAttribute("src","/img/B3.png");
+              img.setAttribute("src","./img/B3.png");
               break;
             }
             if(beat.maxNote.fret==3){
-              img.setAttribute("src","/img/D4.png");
+              img.setAttribute("src","./img/D4.png");
               break;
             }
           }
           case 6:{
             if(beat.maxNote.fret==3){
-              img.setAttribute("src","/img/G4.png");
+              img.setAttribute("src","./img/G4.png");
               break;
             }
             if(beat.maxNote.fret==0){
-              img.setAttribute("src","/img/E4.png");
+              img.setAttribute("src","./img/E4.png");
               break;
             }
               if(beat.maxNote.fret==1){
-              img.setAttribute("src","/img/F4.png");
+              img.setAttribute("src","./img/F4.png");
               break;
             }
           }
           default:{
             if(beat.maxNote.fret==0){
-              img.setAttribute("src","/img/G3.png");
+              img.setAttribute("src","./img/G3.png");
               break;
             }
           }
