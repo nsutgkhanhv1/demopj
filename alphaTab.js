@@ -4,7 +4,7 @@
 
       // initialize alphatab
       const settings = {
-        file: "/gpx/Happy-Birthday-To-You-easy.gpx",
+        file: "./gpx/Happy-Birthday-To-You-easy.gpx",
         player: {
           enablePlayer: true,
           soundFont: "https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/soundfont/sonivox.sf2",
